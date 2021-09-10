@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
     }
 
-    openModal();
+
+    //openModal();
 
     btnsOpen.forEach((btn) => {
         btn.addEventListener('click', openModal);
@@ -48,7 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    function showModalByScroll () {
+    //show modal window if the scroll reaches the end of the page
+    /*function showModalByScroll () {
         if(window.pageYOffset + document.documentElement.clientHeight
             >= document.documentElement.scrollHeight){
             openModal();
@@ -56,6 +58,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    window.addEventListener('scroll', showModalByScroll);
+    window.addEventListener('scroll', showModalByScroll);*/
+
+    //Slider
+    $(document).ready(function(){
+        $('.slider').slick({
+            'setting-name': 'setting-value',
+            'draggable': false,
+            responsive: [
+                {
+                    breakpoint: 540,
+                    settings: {
+                        'draggable': true,
+                        'arrows': false
+                    }
+                }
+            ]
+        });
+
+
+        $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+            $('.slider video').each(function(){
+                this.pause();
+            });
+
+            if($(`#video-${nextSlide}`)[0])
+                $(`#video-${nextSlide}`)[0].play();
+        });
+
+    });
+
 
 });
