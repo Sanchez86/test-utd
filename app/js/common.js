@@ -30,8 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
     }
 
-
-    //openModal();
+    openModal();
 
     btnsOpen.forEach((btn) => {
         btn.addEventListener('click', openModal);
