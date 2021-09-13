@@ -1,6 +1,5 @@
 @import "vars";
 @import "fonts";
-@import "libs";
 @import "_modal.scss";
 @import "_slider.scss";
 @import "_header.scss";
@@ -22,7 +21,6 @@ body {
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
-	line-height: 0;
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
@@ -57,4 +55,6 @@ b, strong {
 	font-weight: bold;
 }
 
-@import "media";
+.d-none{
+	display: none;
+}

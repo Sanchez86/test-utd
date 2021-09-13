@@ -1,4 +1,5 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("Calibre-Regular", "../fonts/CalibreRegular/Calibre-Regular");
+@include font-face("Calibre-Medium", "../fonts/CalibreMedium/Calibre-Medium");
+@include font-face("Calibre-Semibold", "../fonts/CalibreSemibold/Calibre-Semibold");

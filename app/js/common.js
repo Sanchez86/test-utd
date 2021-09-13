@@ -48,16 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    //show modal window if the scroll reaches the end of the page
-    /*function showModalByScroll () {
-        if(window.pageYOffset + document.documentElement.clientHeight
-            >= document.documentElement.scrollHeight){
-            openModal();
-            window.removeEventListener('scroll', showModalByScroll);
-        }
-    }
-
-    window.addEventListener('scroll', showModalByScroll);*/
 
     //Slider
     $(document).ready(function(){
@@ -89,4 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    //navbar toggler
+
+    const navbar = document.querySelector('.navbar-toggler-js'),
+    headerBottomMenu = document.querySelector('.header-bottom__menu');
+
+    navbar.addEventListener('click', function(){
+        this.classList.toggle('active');
+        headerBottomMenu.classList.toggle('active');
+    });
 });

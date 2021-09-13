@@ -1,10 +1,13 @@
-$default-font: "roboto-example", sans-serif;
+$default-font: "Calibre-Regular", sans-serif;
+
+//colors
 $accent: orange;
-$text: #333;
+$text: #292929;
+$text-menu: #121212;
+$text-white: #FFFFFF;
 
-$grid-gutter-width: 30px;
-$grid-columns: 12;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+//font-size
+$size-text: 18px;
+$size-headers: 32px;
+$size-menu: 18px;
 
-$gutter: $grid-gutter-width;
