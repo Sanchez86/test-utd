@@ -26,27 +26,11 @@
         max-height: 80vh;
         overflow-y: auto;
     }
-    &__close {
-        position: absolute;
-        top: 20px;
-        right: 14px;
-        font-size: 30px;
-        color: #000;
-        opacity: .5;
-        font-weight: 700;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
 
     .btn {
         display: block;
         max-width: 280px;
         width:100%;
-        margin: 0 auto;
-    }
-
-    &__accept {
         margin: 20px auto 20px auto;
         height: 50px;
         background: #DDD;
@@ -60,6 +44,7 @@
             border-color: transparent;
         }
     }
+
 }
 .loading{
     display: block;
